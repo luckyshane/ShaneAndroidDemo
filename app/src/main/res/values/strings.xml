@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ShaneDemo</string>
+    <string name="home">主页</string>
+    <string name="menu_backup">备份</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_settings">设置</string>
+
+    <string name="menu_call">Call</string>
+    <string name="menu_friends">Friends</string>
+    <string name="menu_mail">Mail</string>
+
+</resources>
