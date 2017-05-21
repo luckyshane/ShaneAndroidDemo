@@ -11,10 +11,10 @@
         </intent>
     </item>
     <item>
-        <title>Tab DEMO</title>
+        <title>ViewPager DEMO</title>
         <intent>
             <action/>
-            <component_name/>
+            <component_name>com.shane.me.shanedemo.activity.ViewPagerDemoActivity</component_name>
             <extras>
 
             </extras>
