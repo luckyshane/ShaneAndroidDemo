@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <item>
+        <title>Linear RecyclerView DEMO</title>
+        <intent>
+            <action/>
+            <component_name>com.shane.me.shanedemo.activity.LinearRecyclerActivity</component_name>
+            <extras>
+                <extra name="title">Test</extra>
+            </extras>
+        </intent>
+    </item>
+    <item>
+        <title>Tab DEMO</title>
+        <intent>
+            <action/>
+            <component_name/>
+            <extras>
+
+            </extras>
+        </intent>
+    </item>
+</list>
