@@ -22,7 +22,7 @@ import com.shane.me.shanedemo.util.ContextUtil;
 
 public class LiveRecordProgressBar extends View {
 
-    private static final float DEFAULT_TEXT_SIZE = 12;
+    private static final float DEFAULT_TEXT_SIZE = 10;
     private static final float DEFAULT_PADDING_VERTICAL = 2;
 
     private static final float DEFAULT_CIRCLE_DOT_RADIUS = 5;
@@ -87,10 +87,11 @@ public class LiveRecordProgressBar extends View {
 
         textPaint = new Paint();
         textPaint.setColor(textColor);
-        textPaint.setTextSize(ContextUtil.sp2px(context, (int) textSize));
+        textPaint.setTextSize(textSize);
         textPaint.setStyle(Paint.Style.FILL);
 
         circleDotPaint = new Paint();
+        circleDotPaint.setAntiAlias(true);
         circleDotPaint.setColor(circleDotColor);
 
     }

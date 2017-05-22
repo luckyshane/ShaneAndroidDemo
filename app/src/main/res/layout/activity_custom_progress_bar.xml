@@ -13,6 +13,7 @@
         android:layout_centerInParent="true"
         app:backgroundColor="@color/colorPrimary"
         app:text="00:00"
+        app:textSize="14sp"
         />
 
     <!-- app:textSize="10sp"
