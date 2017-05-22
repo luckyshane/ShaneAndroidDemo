@@ -15,9 +15,15 @@
         <intent>
             <action/>
             <component_name>com.shane.me.shanedemo.activity.ViewPagerDemoActivity</component_name>
-            <extras>
-
-            </extras>
+            <extras/>
+        </intent>
+    </item>
+    <item>
+        <title>CustomProgressBar DEMO</title>
+        <intent>
+            <action/>
+            <component_name>com.shane.me.shanedemo.activity.CustomProgressBarActivity</component_name>
+            <extras/>
         </intent>
     </item>
 </list>

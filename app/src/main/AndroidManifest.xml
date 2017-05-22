@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.LinearRecyclerActivity" />
-        <activity android:name=".activity.ViewPagerDemoActivity"></activity>
+        <activity android:name=".activity.ViewPagerDemoActivity" />
+        <activity android:name=".activity.CustomProgressBarActivity"></activity>
     </application>
 
 </manifest>

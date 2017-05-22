@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LiveRecordProgressBar">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="progressSliceColor" format="color"/>
+        <attr name="circleDotColor" format="color"/>
+        <attr name="circleDotColorDark" format="color"/>
+        <attr name="circleDotRadius" format="dimension"/>
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+</resources>
