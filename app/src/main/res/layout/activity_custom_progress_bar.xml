@@ -14,6 +14,8 @@
         app:backgroundColor="@color/colorPrimary"
         app:text="00:00"
         app:textSize="14sp"
+        app:textColor="@color/colorAccent"
+        app:progressColor="@android:color/darker_gray"
         />
 
     <!-- app:textSize="10sp"
