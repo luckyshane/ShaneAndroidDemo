@@ -47,8 +47,6 @@ public class CustomProgressBarActivity extends BaseActivity {
                 progressBar.setText(String.format("%.0f%%", progressBar.getCurProgressRate() * 100));
 
                 progressBar.setCurProgress(count);
-                progressBar.update();
-
                 if (count < MAX_COUNT) {
                     handler.postDelayed(this, DELAY);
                 }
@@ -56,6 +54,17 @@ public class CustomProgressBarActivity extends BaseActivity {
         }, DELAY);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        progressBar.startAutoDraw();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        progressBar.stopAutoDraw();
+    }
 
 
 

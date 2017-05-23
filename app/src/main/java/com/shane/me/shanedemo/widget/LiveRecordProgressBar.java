@@ -10,10 +10,11 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import com.shane.me.shanedemo.R;
@@ -24,6 +25,9 @@ import java.util.List;
 
 
 public class LiveRecordProgressBar extends View {
+
+    private static final int DEFAULT_AUTO_DRAW_INTERVAL = 16 * 2;   // 16ms更新一次则刷新率约为60，这里没必要更新那么频繁
+    private static final long TWINKLE_INTERVAL_IN_MILLIS = 499;
 
     private static final float DEFAULT_TEXT_SIZE_IN_SP = 10;
     private static final float DEFAULT_PADDING_VERTICAL_IN_DP = 2;
@@ -55,7 +59,6 @@ public class LiveRecordProgressBar extends View {
 
     private List<Float> sliceRates;
 
-
     private Paint backgroundPaint;
     private Paint progressPaint;
     private Paint textPaint;
@@ -65,6 +68,14 @@ public class LiveRecordProgressBar extends View {
     private int circleDotColor;
     private int circleDotColorDark;
     private float circleDotRadiusInPx;
+
+    private boolean twinkleCircleDot = true;
+
+    private long t1;
+    private int twinkleCount;
+
+
+    private Handler handler = new Handler(Looper.getMainLooper());
 
 
     public LiveRecordProgressBar(Context context) {
@@ -118,6 +129,37 @@ public class LiveRecordProgressBar extends View {
         slicePaint.setStrokeWidth(sliceWidth);
 
         sliceRates = new ArrayList<>();
+    }
+
+    public void startAutoDraw() {
+        startAutoDraw(DEFAULT_AUTO_DRAW_INTERVAL);
+    }
+
+    /**
+     * 启动自动更新，定时绘制UI。调用此方法后，外部在更新了设置后，不需要手动调用{@link #update()}方法
+     * @param delayInMillis 刷新间隔，时间不建议超过1s
+     */
+    public void startAutoDraw(int delayInMillis) {
+        if (delayInMillis < DEFAULT_AUTO_DRAW_INTERVAL) {
+            delayInMillis = DEFAULT_AUTO_DRAW_INTERVAL;
+        }
+        final int delay = delayInMillis;
+        handler.removeCallbacksAndMessages(null);
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                autoDraw();
+                handler.postDelayed(this, delay);
+            }
+        }, delay);
+    }
+
+    public void stopAutoDraw() {
+        handler.removeCallbacksAndMessages(null);
+    }
+
+    public void enableTwinkleCircleDot(boolean enable) {
+        twinkleCircleDot = enable;
     }
 
     public void setText(String text) {
@@ -192,6 +234,22 @@ public class LiveRecordProgressBar extends View {
         invalidate();
     }
 
+    private void autoDraw() {
+        long t2 = System.currentTimeMillis();
+        if (t2 - t1 >= TWINKLE_INTERVAL_IN_MILLIS) {
+            if (twinkleCount % 2 == 0) {
+                circleDotPaint.setColor(circleDotColor);
+            } else {
+                circleDotPaint.setColor(circleDotColorDark);
+            }
+            twinkleCount++;
+            t1 = t2;
+        }
+
+        invalidate();
+    }
+
+
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         setMeasuredDimension(measureWidth(widthMeasureSpec), measureHeight(heightMeasureSpec));
@@ -231,8 +289,9 @@ public class LiveRecordProgressBar extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-
+        if (getVisibility() != VISIBLE) {
+            return;
+        }
         drawBackground(canvas);
         drawProgress(canvas);
         drawProgressSlices(canvas);
@@ -280,11 +339,6 @@ public class LiveRecordProgressBar extends View {
             float circleDotY = getHeight() / 2;
 
             canvas.drawCircle(circleDotX, circleDotY, circleDotRadiusInPx, circleDotPaint);
-
-            int textHeight = textBounds.height();
-
-            Log.d("drawCircleDotAndText", "height: " + getHeight() + ", textHeight: " + textHeight);
-
 
             float textLeft = circleDotX + circleDotRadiusInPx + circleDotMarginPx;
             float textBaseLine = (getHeight() - fontMetrics.bottom + fontMetrics.top) / 2 - fontMetrics.top;
