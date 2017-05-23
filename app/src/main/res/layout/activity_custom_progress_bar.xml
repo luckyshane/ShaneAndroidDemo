@@ -11,11 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:backgroundColor="@color/colorPrimary"
         app:text="00:00"
         app:textSize="14sp"
         app:textColor="@color/colorAccent"
-        app:progressColor="@android:color/darker_gray"
+        app:sliceWidth="2dp"
         />
 
     <!-- app:textSize="10sp"

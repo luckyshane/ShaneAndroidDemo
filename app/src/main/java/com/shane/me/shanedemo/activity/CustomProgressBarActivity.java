@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 
 import com.shane.me.shanedemo.R;
 import com.shane.me.shanedemo.widget.LiveRecordProgressBar;
@@ -17,7 +16,7 @@ public class CustomProgressBarActivity extends BaseActivity {
     @BindView(R.id.progressbar_test)
     LiveRecordProgressBar progressBar;
 
-    static final int MAX_COUNT = 10 * 1000;
+    static final int MAX_COUNT = 30 * 1000;
     int count;
 
     private Handler handler = new Handler(Looper.getMainLooper()) {
@@ -34,6 +33,7 @@ public class CustomProgressBarActivity extends BaseActivity {
         ButterKnife.bind(this);
 
         progressBar.setMaxProgress(MAX_COUNT);
+        progressBar.addSliceProgress(3 * 1000);
         testProgressCount();
     }
 
