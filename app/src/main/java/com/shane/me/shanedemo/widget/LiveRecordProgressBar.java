@@ -69,7 +69,7 @@ public class LiveRecordProgressBar extends View {
     private int circleDotColorDark;
     private float circleDotRadiusInPx;
 
-    private boolean twinkleCircleDot = true;
+    private boolean twinkleCircleDotEnabled = true;
 
     private long t1;
     private int twinkleCount;
@@ -159,7 +159,7 @@ public class LiveRecordProgressBar extends View {
     }
 
     public void enableTwinkleCircleDot(boolean enable) {
-        twinkleCircleDot = enable;
+        twinkleCircleDotEnabled = enable;
     }
 
     public void setText(String text) {
@@ -235,19 +235,25 @@ public class LiveRecordProgressBar extends View {
     }
 
     private void autoDraw() {
-        long t2 = System.currentTimeMillis();
-        if (t2 - t1 >= TWINKLE_INTERVAL_IN_MILLIS) {
-            if (twinkleCount % 2 == 0) {
-                circleDotPaint.setColor(circleDotColor);
-            } else {
-                circleDotPaint.setColor(circleDotColorDark);
-            }
-            twinkleCount++;
-            t1 = t2;
-        }
-
+        twinkleCircleDot();
         invalidate();
     }
+
+    private void twinkleCircleDot() {
+        if (twinkleCircleDotEnabled) {
+            long t2 = System.currentTimeMillis();
+            if (t2 - t1 >= TWINKLE_INTERVAL_IN_MILLIS) {
+                if (twinkleCount % 2 == 0) {
+                    circleDotPaint.setColor(circleDotColor);
+                } else {
+                    circleDotPaint.setColor(circleDotColorDark);
+                }
+                twinkleCount++;
+                t1 = t2;
+            }
+        }
+    }
+
 
 
     @Override
