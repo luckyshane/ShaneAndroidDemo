@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by Asus on 2017/5/21.
  */
 
-public class LinearRecyclerActivity extends AppCompatActivity {
+public class LinearRecyclerActivity extends BaseActivity {
 
 
     @Override

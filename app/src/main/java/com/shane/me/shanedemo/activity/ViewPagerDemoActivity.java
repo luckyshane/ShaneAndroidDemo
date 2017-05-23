@@ -18,7 +18,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ViewPagerDemoActivity extends AppCompatActivity {
+public class ViewPagerDemoActivity extends BaseActivity {
 
     @BindView(R.id.viewpager_test)
     ViewPager viewPager;

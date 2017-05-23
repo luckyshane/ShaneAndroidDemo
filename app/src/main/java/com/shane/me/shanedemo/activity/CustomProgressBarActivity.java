@@ -12,7 +12,7 @@ import com.shane.me.shanedemo.widget.LiveRecordProgressBar;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CustomProgressBarActivity extends AppCompatActivity {
+public class CustomProgressBarActivity extends BaseActivity {
 
     @BindView(R.id.progressbar_test)
     LiveRecordProgressBar progressBar;
