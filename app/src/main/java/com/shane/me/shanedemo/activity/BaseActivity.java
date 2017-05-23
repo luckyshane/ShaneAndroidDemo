@@ -11,7 +11,7 @@ import android.util.Log;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
-    protected static final String TAG = BaseActivity.class.getSimpleName();
+    protected final String TAG = this.getClass().getSimpleName();
 
 
     @Override
