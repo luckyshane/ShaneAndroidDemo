@@ -11,10 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:text="00:00"
-        app:textSize="14sp"
-        app:textColor="@color/colorAccent"
-        app:sliceWidth="2dp"
+        android:text="00:00"
+        android:textSize="14sp"
+        android:textColor="@color/colorAccent"
+        app:recordProgressBar_sliceWidth="2dp"
+        app:recordProgressBar_circleDotColor="@color/colorPrimary"
         />
 
     <!-- app:textSize="10sp"

@@ -96,16 +96,16 @@ public class LiveRecordProgressBar extends View {
 
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.LiveRecordProgressBar);
 
-        int backgroundColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_backgroundColor, Color.GRAY);
-        int progressColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_progressColor, Color.CYAN);
-        int progressSliceColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_progressSliceColor, Color.WHITE);
-        circleDotColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_circleDotColor, Color.WHITE);
-        circleDotColorDark = typedArray.getColor(R.styleable.LiveRecordProgressBar_circleDotColorDark, Color.DKGRAY);
-        circleDotRadiusInPx = typedArray.getDimension(R.styleable.LiveRecordProgressBar_circleDotRadius, dip2px(DEFAULT_CIRCLE_DOT_RADIUS_IN_DP));
-        float textSizeInPx = typedArray.getDimension(R.styleable.LiveRecordProgressBar_textSize, dip2px(DEFAULT_TEXT_SIZE_IN_SP));
-        int textColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_textColor, Color.RED);
-        text = typedArray.getString(R.styleable.LiveRecordProgressBar_text);
-        float sliceWidth = typedArray.getDimension(R.styleable.LiveRecordProgressBar_sliceWidth, dip2px(DEFAULT_SLICE_WIDTH_IN_DP));
+        int backgroundColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_recordProgressBar_backgroundColor, Color.GRAY);
+        int progressColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_recordProgressBar_progressColor, Color.CYAN);
+        int progressSliceColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_recordProgressBar_progressSliceColor, Color.WHITE);
+        circleDotColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_recordProgressBar_circleDotColor, Color.WHITE);
+        circleDotColorDark = typedArray.getColor(R.styleable.LiveRecordProgressBar_recordProgressBar_circleDotColorDark, Color.DKGRAY);
+        circleDotRadiusInPx = typedArray.getDimension(R.styleable.LiveRecordProgressBar_recordProgressBar_circleDotRadius, dip2px(DEFAULT_CIRCLE_DOT_RADIUS_IN_DP));
+        float textSizeInPx = typedArray.getDimension(R.styleable.LiveRecordProgressBar_android_textSize, dip2px(DEFAULT_TEXT_SIZE_IN_SP));
+        int textColor = typedArray.getColor(R.styleable.LiveRecordProgressBar_android_textColor, Color.RED);
+        text = typedArray.getString(R.styleable.LiveRecordProgressBar_android_text);
+        float sliceWidth = typedArray.getDimension(R.styleable.LiveRecordProgressBar_recordProgressBar_sliceWidth, dip2px(DEFAULT_SLICE_WIDTH_IN_DP));
 
         typedArray.recycle();
 
