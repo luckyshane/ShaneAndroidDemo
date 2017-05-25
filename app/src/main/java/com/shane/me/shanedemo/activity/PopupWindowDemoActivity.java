@@ -21,13 +21,6 @@ public class PopupWindowDemoActivity extends BaseActivity {
     @BindView(R.id.btn_popup)
     Button popupBtn;
 
-    @BindView(R.id.btn_popup_top)
-    Button topBtn;
-
-    @BindView(R.id.btn_popup_bottom)
-    Button bottomBtn;
-
-
     AnimationDialog dialog;
 
     @Override
@@ -42,30 +35,16 @@ public class PopupWindowDemoActivity extends BaseActivity {
 
     @OnClick(R.id.btn_popup)
     void onPopupBtnClick() {
-        dialog.setAnimationStyle(R.style.popupwindow);
-        dialog.showAtLocation(getWindow().getDecorView(), Gravity.CENTER, 0, 0);
-    }
-
-    @OnClick(R.id.btn_popup_top)
-    void onPopupTopBtnClick() {
         dialog.show();
     }
-
-    @OnClick(R.id.btn_popup_bottom)
-    void onPopupBottomBtnClick() {
-        dialog.showAtLocation(getWindow().getDecorView(),Gravity.BOTTOM, 0, 0);
-    }
-
 
     @Override
     public void onBackPressed() {
         if (dialog.isShowing()) {
-            dialog.dismiss();
             return;
         }
         super.onBackPressed();
     }
-
 
 
 }

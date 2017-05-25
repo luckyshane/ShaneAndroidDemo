@@ -13,17 +13,4 @@
         android:text="弹出窗口"
         />
 
-
-    <Button android:id="@+id/btn_popup_top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="top"
-        />
-
-    <Button android:id="@+id/btn_popup_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="bottom"
-        />
-
 </LinearLayout>

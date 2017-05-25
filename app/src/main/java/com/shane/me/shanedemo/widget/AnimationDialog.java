@@ -32,6 +32,9 @@ public class AnimationDialog extends PopupWindow {
     @BindView(R.id.btn_dialog_test)
     Button testBtn;
 
+    @BindView(R.id.btn_cancel)
+    View cancelBtn;
+
 
     public AnimationDialog(Activity context) {
         super(context);
@@ -65,18 +68,6 @@ public class AnimationDialog extends PopupWindow {
 
         Animation animation = AnimationUtils.loadAnimation(context, R.anim.slide_in_from_top);
         animation.setInterpolator(new AccelerateDecelerateInterpolator());
-        sharePanel.startAnimation(animation);
-    }
-
-    @OnClick(R.id.btn_dialog_test)
-    public void test() {
-        ToastUtil.shortToast(context, "You click test button");
-    }
-
-    @Override
-    public void dismiss() {
-       // super.dismiss();
-        Animation animation = AnimationUtils.loadAnimation(context, R.anim.slide_out_to_bottom);
         animation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -85,7 +76,7 @@ public class AnimationDialog extends PopupWindow {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                AnimationDialog.super.dismiss();
+                cancelBtn.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -96,6 +87,37 @@ public class AnimationDialog extends PopupWindow {
         sharePanel.startAnimation(animation);
     }
 
+    @OnClick(R.id.btn_dialog_test)
+    public void test() {
+        ToastUtil.shortToast(context, "You click test button");
+    }
+
+    @OnClick(R.id.btn_cancel)
+    public void cancel() {
+        cancelBtn.setVisibility(View.INVISIBLE);
+        exit();
+    }
+
+    private void exit() {
+        Animation animation = AnimationUtils.loadAnimation(context, R.anim.slide_out_to_bottom);
+        animation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                AnimationDialog.this.dismiss();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        sharePanel.startAnimation(animation);
+    }
 
 
 
