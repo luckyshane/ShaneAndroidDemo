@@ -26,4 +26,10 @@
             <extras/>
         </intent>
     </item>
+    <item>
+        <title>PopupWindowDEMO</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.PopupWindowDemoActivity</component_name>
+        </intent>
+    </item>
 </list>

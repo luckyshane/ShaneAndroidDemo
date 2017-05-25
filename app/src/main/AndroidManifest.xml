@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".activity.LinearRecyclerActivity" />
         <activity android:name=".activity.ViewPagerDemoActivity" />
-        <activity android:name=".activity.CustomProgressBarActivity"></activity>
+        <activity android:name=".activity.CustomProgressBarActivity" />
+        <activity android:name=".activity.PopupWindowDemoActivity" />
     </application>
 
 </manifest>
