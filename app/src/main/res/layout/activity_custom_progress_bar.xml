@@ -18,6 +18,14 @@
         app:recordProgressBar_circleDotColor="@color/colorPrimary"
         />
 
-    <!-- app:textSize="10sp"
-       app:circleDotRadius="5sp"-->
+    <ImageView android:id="@+id/btn_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_record_normal"
+        android:layout_below="@id/progressbar_test"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+
 </RelativeLayout>
