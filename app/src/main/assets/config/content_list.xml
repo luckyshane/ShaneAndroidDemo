@@ -32,4 +32,10 @@
             <component_name>com.shane.me.shanedemo.activity.PopupWindowDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>ServiceLifeCycleDEMO</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.ServiceLifeCycleDemoActivity</component_name>
+        </intent>
+    </item>
 </list>

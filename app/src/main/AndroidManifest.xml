@@ -20,6 +20,12 @@
         <activity android:name=".activity.ViewPagerDemoActivity" />
         <activity android:name=".activity.CustomProgressBarActivity" />
         <activity android:name=".activity.PopupWindowDemoActivity" />
+        <activity android:name=".activity.ServiceLifeCycleDemoActivity"/>
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>
