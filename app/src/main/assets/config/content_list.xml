@@ -44,4 +44,10 @@
             <component_name>com.shane.me.shanedemo.activity.MediaRecordDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>TweenAnimDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.AnimDemoActivity</component_name>
+        </intent>
+    </item>
 </list>
