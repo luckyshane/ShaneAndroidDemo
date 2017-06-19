@@ -30,6 +30,7 @@
 
         <activity
             android:name=".activity.AnimDemoActivity" />
+        <activity android:name=".activity.RippleDemoActivity" />
     </application>
 
 </manifest>
