@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button android:id="@+id/show_panel_from_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从下面进入退出"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        />
+    <Button android:id="@+id/show_panel_from_left_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从左边进入退出"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/show_panel_from_bottom_btn"
+        />
+
+    <Button android:id="@+id/show_invalid_tip_from_left_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示隐藏左边文本"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/show_panel_from_left_btn"
+        />
+
+    <Button android:id="@+id/shake_bottom_tip_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="shake底部提示"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/show_invalid_tip_from_left_btn"
+        />
+
+    <Button android:id="@+id/show_bottom_all_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="显示底部所有动画"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/show_invalid_tip_from_left_btn"
+        />
+
+
+    <RelativeLayout android:id="@+id/target_panel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"
+        />
+    <TextView android:id="@+id/invalid_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录制时间少于3秒"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@id/target_panel"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        />
+
+    <ImageView android:id="@+id/tip_bottom_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="底部提示"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:src="@mipmap/record_tip"
+        />
+
+</RelativeLayout>

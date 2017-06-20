@@ -31,6 +31,7 @@
         <activity
             android:name=".activity.AnimDemoActivity" />
         <activity android:name=".activity.RippleDemoActivity" />
+        <activity android:name=".activity.PanelShowDemoActivity" />
     </application>
 
 </manifest>
