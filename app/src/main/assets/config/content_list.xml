@@ -62,4 +62,10 @@
             <component_name>com.shane.me.shanedemo.activity.PanelShowDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>NetDiagnosisDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.DiagnosisDemoActivity</component_name>
+        </intent>
+    </item>
 </list>

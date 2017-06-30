@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shane.me.shanedemo">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,11 +30,14 @@
             android:name=".service.MyService"
             android:enabled="true"
             android:exported="true" />
+        <service android:name=".service.NetDiagnosisService" />
 
         <activity
             android:name=".activity.AnimDemoActivity" />
         <activity android:name=".activity.RippleDemoActivity" />
         <activity android:name=".activity.PanelShowDemoActivity" />
+        <activity android:name=".activity.DiagnosisDemoActivity" />
+
     </application>
 
 </manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText android:id="@+id/host_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="www.tianya.cn"
+            />
+        <Button android:id="@+id/go_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button android:id="@+id/ping_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ping"
+            />
+        <Button android:id="@+id/dns_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DNS"
+            />
+        <Button android:id="@+id/trace_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trace"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:id="@+id/content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="false"
+            />
+    </ScrollView>
+
+
+</LinearLayout>
