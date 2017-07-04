@@ -6,4 +6,10 @@
     <color name="colorRipple">#B2308ee3</color>
     <color name="maskColor">#b0000000</color>
 
+    <color name="white">#FFFFFF</color>
+
+    <color name="toastBgColor">#E5E94F40</color>
+
+
+
 </resources>

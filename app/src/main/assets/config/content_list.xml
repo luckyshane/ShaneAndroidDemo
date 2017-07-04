@@ -68,4 +68,10 @@
             <component_name>com.shane.me.shanedemo.activity.DiagnosisDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>ToastDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.ToastDemoActivity</component_name>
+        </intent>
+    </item>
 </list>

@@ -37,6 +37,7 @@
         <activity android:name=".activity.RippleDemoActivity" />
         <activity android:name=".activity.PanelShowDemoActivity" />
         <activity android:name=".activity.DiagnosisDemoActivity" />
+        <activity android:name=".activity.ToastDemoActivity" />
 
     </application>
 

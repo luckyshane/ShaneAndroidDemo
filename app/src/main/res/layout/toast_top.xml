@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="@color/toastBgColor"
+    >
+
+    <TextView android:id="@+id/toast_text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textSize="@dimen/toast_text_size"
+        android:textColor="@color/white"
+        android:text="您正在使用移动流量，请注意"
+        />
+</LinearLayout>
