@@ -74,4 +74,10 @@
             <component_name>com.shane.me.shanedemo.activity.ToastDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>VideoViewDialogDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.VideoDialogDemoActivity</component_name>
+        </intent>
+    </item>
 </list>

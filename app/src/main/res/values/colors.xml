@@ -8,8 +8,9 @@
 
     <color name="white">#FFFFFF</color>
 
-    <color name="toastBgColor">#E5E94F40</color>
+    <color name="toastBgColor">#E94F40</color>
 
+    <color name="colorDim">#99000000</color>
 
 
 </resources>
