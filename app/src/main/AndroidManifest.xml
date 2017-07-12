@@ -39,6 +39,7 @@
         <activity android:name=".activity.DiagnosisDemoActivity" />
         <activity android:name=".activity.ToastDemoActivity" />
         <activity android:name=".activity.VideoDialogDemoActivity" />
+        <activity android:name=".activity.ProgressBarExActivity" />
 
     </application>
 

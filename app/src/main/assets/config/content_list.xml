@@ -27,6 +27,12 @@
         </intent>
     </item>
     <item>
+        <title>ProgressBarExDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.ProgressBarExActivity</component_name>
+        </intent>
+    </item>
+    <item>
         <title>PopupWindowDEMO</title>
         <intent>
             <component_name>com.shane.me.shanedemo.activity.PopupWindowDemoActivity</component_name>

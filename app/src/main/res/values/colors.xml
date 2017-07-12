@@ -5,12 +5,11 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorRipple">#B2308ee3</color>
     <color name="maskColor">#b0000000</color>
-
     <color name="white">#FFFFFF</color>
-
     <color name="toastBgColor">#E94F40</color>
-
     <color name="colorDim">#99000000</color>
+    <color name="color_trans_50_black">#80000000</color>
+    <color name="color_308ee3">#308ee3</color>
 
 
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <com.shane.me.shanedemo.widget.RecordProgressBarEx android:id="@+id/test_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/progressBar_height"
+        android:layout_marginTop="200dp"
+        />
+
+    <Button android:id="@+id/test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:layout_below="@id/test_progressbar"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

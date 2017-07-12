@@ -3,5 +3,7 @@
     <dimen name="toast_text_size">12sp</dimen>
     <dimen name="toast_height">20dp</dimen>
 
+    <dimen name="progressBar_height">15dp</dimen>
+
 
 </resources>
