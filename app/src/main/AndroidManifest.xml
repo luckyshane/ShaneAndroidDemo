@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -37,9 +38,14 @@
         <activity android:name=".activity.RippleDemoActivity" />
         <activity android:name=".activity.PanelShowDemoActivity" />
         <activity android:name=".activity.DiagnosisDemoActivity" />
-        <activity android:name=".activity.ToastDemoActivity" />
+        <activity android:name=".activity.ToastDemoActivity"
+            android:theme="@style/Theme.AppCompat.TranslucentActionBar"
+            >
+
+        </activity>
         <activity android:name=".activity.VideoDialogDemoActivity" />
         <activity android:name=".activity.ProgressBarExActivity" />
+        <activity android:name=".activity.WindowManagerDemoActivity" />
 
     </application>
 

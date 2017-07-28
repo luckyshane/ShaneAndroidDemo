@@ -23,6 +23,11 @@ public class ToastDemoActivity extends BaseActivity {
         setContentView(R.layout.activity_toast_demo);
 
         ButterKnife.bind(this);
+
+
+        for (int i = 0; i < 5; i++) {
+            ToastUtil.shortToast(this, "这是测试文本： " + i);
+        }
     }
 
 
@@ -32,11 +37,10 @@ public class ToastDemoActivity extends BaseActivity {
     }
 
 
+    @Override
+    protected void onPause() {
+        super.onPause();
 
-
-
-
-
-
-
+        ToastUtil.cancel();
+    }
 }
