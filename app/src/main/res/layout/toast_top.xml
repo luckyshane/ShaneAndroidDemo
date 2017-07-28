@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="20dp"
-    android:background="@color/toastBgColor"
-    >
+    android:layout_height="55dp"
+    android:background="@color/toastBgColor">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_toast_attention"
+            android:layout_marginRight="6dp"
+            />
 
-    <TextView android:id="@+id/toast_text_tv"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:gravity="center"
-        android:textSize="@dimen/toast_text_size"
-        android:textColor="@color/white"
-        android:text="您正在使用移动流量，请注意"
-        />
-</LinearLayout>
+        <TextView android:id="@+id/toast_text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/toast_text_size"
+            android:textColor="@color/white"
+            android:text="您正在使用移动流量，将消耗流量！"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -86,4 +86,10 @@
             <component_name>com.shane.me.shanedemo.activity.VideoDialogDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>WindowManagerDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.WindowManagerDemoActivity</component_name>
+        </intent>
+    </item>
 </list>
