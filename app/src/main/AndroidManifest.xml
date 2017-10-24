@@ -46,6 +46,7 @@
         <activity android:name=".activity.VideoDialogDemoActivity" />
         <activity android:name=".activity.ProgressBarExActivity" />
         <activity android:name=".activity.WindowManagerDemoActivity" />
+        <activity android:name=".activity.DrawerLayoutDemoActivity" />
 
     </application>
 

@@ -92,4 +92,10 @@
             <component_name>com.shane.me.shanedemo.activity.WindowManagerDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>DrawerLayoutDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.DrawerLayoutDemoActivity</component_name>
+        </intent>
+    </item>
 </list>
