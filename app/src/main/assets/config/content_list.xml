@@ -98,4 +98,12 @@
             <component_name>com.shane.me.shanedemo.activity.DrawerLayoutDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>FragmentExpandDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.FragmentExpandDemoActivity</component_name>
+        </intent>
+    </item>
+
+
 </list>

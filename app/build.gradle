@@ -30,6 +30,7 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.jakewharton:butterknife:8.6.0'
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile 'info.hoang8f:android-segmented:1.0.6'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
 }
