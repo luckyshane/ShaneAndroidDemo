@@ -104,6 +104,10 @@
             <component_name>com.shane.me.shanedemo.activity.FragmentExpandDemoActivity</component_name>
         </intent>
     </item>
-
-
+    <item>
+        <title>ShadowDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.ShadowDemoActivity</component_name>
+        </intent>
+    </item>
 </list>
