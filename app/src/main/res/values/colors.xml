@@ -12,4 +12,8 @@
     <color name="color_308ee3">#308ee3</color>
     <color name="common_light_blue">#308ee3</color>
 
+    <color name="bg_cyan">#55CEE0</color>
+    <color name="account_mask">#12787878</color>
+    <color name="text_normal">#465C66</color>
+
 </resources>

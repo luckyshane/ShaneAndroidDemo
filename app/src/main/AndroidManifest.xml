@@ -49,7 +49,8 @@
         <activity android:name=".activity.DrawerLayoutDemoActivity" />
         <activity android:name=".activity.FragmentExpandDemoActivity" />
         <activity android:name=".activity.ShadowDemoActivity" />
-
+        <activity android:name=".activity.SignInDemoActivity" />
+        <activity android:name=".activity.TestActivity" />
     </application>
 
 </manifest>

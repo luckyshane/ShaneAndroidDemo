@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shadow_main_talkview"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <ImageView android:layout_width="12dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_talkview_flag"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <RelativeLayout android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shadow_e5e5"
+            android:gravity="center"
+            >
+            <ImageView android:id="@+id/protocol_iv"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_protocol"
+                android:layout_centerVertical="true"
+                />
+            <TextView android:layout_toRightOf="@id/protocol_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:text="Protocol"
+                android:textColor="@color/text_normal"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shadow_e5e5"
+            android:gravity="center"
+            >
+            <ImageView android:id="@+id/feedback_iv"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_feedback"
+                android:layout_centerVertical="true"
+                />
+            <TextView android:layout_toRightOf="@id/feedback_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:text="Help center"
+                android:textColor="@color/text_normal"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
