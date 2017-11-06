@@ -73,4 +73,12 @@
     </style>
 
 
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/icon_search</item>
+        <item name="searchHintIcon">@drawable/icon_search</item>
+        <item name="closeIcon">@drawable/icon_search_clear</item>
+        <item name="queryBackground">@null</item>
+    </style>
+
+
 </resources>

@@ -123,4 +123,11 @@
             <component_name>com.shane.me.shanedemo.activity.SignInDemoActivity</component_name>
         </intent>
     </item>
+    <item>
+        <title>SearchDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.SearchDemoActivity</component_name>
+        </intent>
+    </item>
+
 </list>
