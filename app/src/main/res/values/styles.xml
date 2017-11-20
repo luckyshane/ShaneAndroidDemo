@@ -80,5 +80,12 @@
         <item name="queryBackground">@null</item>
     </style>
 
+    <declare-styleable name="LoadingView">
+        <attr name="loadingDrawable" format="reference"/>
+        <attr name="loadingFrameArray" format="reference" />
+        <attr name="loadingFps" format="integer"/>
+    </declare-styleable>
+
+
 
 </resources>

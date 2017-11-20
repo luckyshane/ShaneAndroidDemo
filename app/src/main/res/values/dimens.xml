@@ -5,5 +5,7 @@
 
     <dimen name="progressBar_height">15dp</dimen>
 
+    <integer name="loading_interval">50</integer>
+
 
 </resources>

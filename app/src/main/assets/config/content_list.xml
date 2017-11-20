@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <list>
-    <item>
+<!--    <item>
         <title>TestActivity</title>
         <intent>
             <action/>
@@ -38,8 +38,8 @@
         <intent>
             <component_name>com.shane.me.shanedemo.activity.ProgressBarExActivity</component_name>
         </intent>
-    </item>
-    <item>
+    </item>-->
+<!--    <item>
         <title>PopupWindowDEMO</title>
         <intent>
             <component_name>com.shane.me.shanedemo.activity.PopupWindowDemoActivity</component_name>
@@ -68,7 +68,7 @@
         <intent>
             <component_name>com.shane.me.shanedemo.activity.RippleDemoActivity</component_name>
         </intent>
-    </item>
+    </item>-->
     <item>
         <title>PanelShowDemo</title>
         <intent>
@@ -127,6 +127,20 @@
         <title>SearchDemo</title>
         <intent>
             <component_name>com.shane.me.shanedemo.activity.SearchDemoActivity</component_name>
+        </intent>
+    </item>
+
+    <item>
+        <title>LoadingDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.LoadingDemoActivity</component_name>
+        </intent>
+    </item>
+
+    <item>
+        <title>LoadingDemo2</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.LoadingDemo2Activity</component_name>
         </intent>
     </item>
 

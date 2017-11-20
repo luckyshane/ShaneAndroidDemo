@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/loading_normal00000"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00001"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00002"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00003"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00004"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00005"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00006"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00007"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00008"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00009"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00010"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00011"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00012"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00013"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00014"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00015"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00016"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00017"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00018"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00019"
+        android:duration="@integer/loading_interval" />
+    <item
+        android:drawable="@drawable/loading_normal00020"
+        android:duration="@integer/loading_interval" />
+</animation-list>

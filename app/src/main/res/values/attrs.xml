@@ -12,4 +12,29 @@
         <attr name="android:textSize" />
         <attr name="recordProgressBar_sliceWidth" format="dimension"/>
     </declare-styleable>
+
+    <string-array name="loading_anim">
+        <item>@drawable/loading_normal00000</item>
+        <item>@drawable/loading_normal00001</item>
+        <item>@drawable/loading_normal00002</item>
+        <item>@drawable/loading_normal00003</item>
+        <item>@drawable/loading_normal00004</item>
+        <item>@drawable/loading_normal00005</item>
+        <item>@drawable/loading_normal00006</item>
+        <item>@drawable/loading_normal00007</item>
+        <item>@drawable/loading_normal00008</item>
+        <item>@drawable/loading_normal00009</item>
+        <item>@drawable/loading_normal00010</item>
+        <item>@drawable/loading_normal00011</item>
+        <item>@drawable/loading_normal00012</item>
+        <item>@drawable/loading_normal00013</item>
+        <item>@drawable/loading_normal00014</item>
+        <item>@drawable/loading_normal00015</item>
+        <item>@drawable/loading_normal00016</item>
+        <item>@drawable/loading_normal00017</item>
+        <item>@drawable/loading_normal00018</item>
+        <item>@drawable/loading_normal00019</item>
+        <item>@drawable/loading_normal00020</item>
+    </string-array>
+
 </resources>

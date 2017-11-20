@@ -52,6 +52,8 @@
         <activity android:name=".activity.SignInDemoActivity" />
         <activity android:name=".activity.TestActivity" />
         <activity android:name=".activity.SearchDemoActivity" />
+        <activity android:name=".activity.LoadingDemoActivity" />
+        <activity android:name=".activity.LoadingDemo2Activity" />
     </application>
 
 </manifest>
