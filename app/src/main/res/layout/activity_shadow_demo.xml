@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/shadow_91329">
 
         <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_margin="4dp"
             android:background="@color/common_light_blue" />
     </LinearLayout>
+
+    <Button android:id="@+id/shadow_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_yellow"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shadow_shape_2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shadow_shape_3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+
 
 
 </LinearLayout>
