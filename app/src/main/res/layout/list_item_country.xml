@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView android:id="@+id/collapse_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView android:id="@+id/flag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国旗"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView android:id="@+id/server_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="United States" />
+    </LinearLayout>
+    <View style="@style/CommonDivider"
+        android:layout_marginLeft="35dp"
+        />
+</LinearLayout>
