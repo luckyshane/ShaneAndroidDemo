@@ -48,13 +48,6 @@ public class TreeNode<T> {
 
     public void setExpanded(boolean isExpanded) {
         this.isExpanded = isExpanded;
-        if (!isExpanded) {
-            if (children != null) {
-                for (TreeNode node : children) {
-                    node.setExpanded(isExpanded);
-                }
-            }
-        }
     }
 
     public T getData() {

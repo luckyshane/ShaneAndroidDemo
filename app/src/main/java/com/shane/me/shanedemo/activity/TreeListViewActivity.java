@@ -89,9 +89,7 @@ public class TreeListViewActivity extends BaseActivity {
             tmp = Server.newCountryServer(asiaCountry);
             asia.addSubServer(tmp);
         }
-
         serverList.add(asia);
-
     }
 
 
