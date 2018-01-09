@@ -55,6 +55,7 @@
         <activity android:name=".activity.LoadingDemoActivity" />
         <activity android:name=".activity.LoadingDemo2Activity" />
         <activity android:name=".activity.TreeListViewActivity" />
+        <activity android:name=".activity.BottomSheetActivity" />
     </application>
 
 </manifest>

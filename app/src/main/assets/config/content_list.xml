@@ -70,6 +70,12 @@
         </intent>
     </item>-->
     <item>
+        <title>BottomSheetDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.BottomSheetActivity</component_name>
+        </intent>
+    </item>
+    <item>
         <title>TreeListViewDemo</title>
         <intent>
             <component_name>com.shane.me.shanedemo.activity.TreeListViewActivity</component_name>
