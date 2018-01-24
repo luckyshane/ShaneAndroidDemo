@@ -45,7 +45,6 @@ public class BottomNavigationViewActivity extends BaseActivity {
                 return true;
             }
         });
-        //bottomNavigationView.setSelectedItemId(R.id.fav_menu);
     }
 
 
