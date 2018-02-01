@@ -57,6 +57,7 @@
         <activity android:name=".activity.TreeListViewActivity" />
         <activity android:name=".activity.BottomSheetActivity" />
         <activity android:name=".activity.BottomNavigationViewActivity" />
+        <activity android:name=".activity.ConstraintLayoutActivity" />
     </application>
 
 </manifest>
