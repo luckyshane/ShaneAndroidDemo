@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#EEFFAF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
+    <include layout="@layout/panel_bottom_sheet_main"
+        />
+
+    <RelativeLayout android:id="@+id/bottom_sheet_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_cyan"
+        app:behavior_peekHeight="100dp"
+        android:clickable="true"
+        app:layout_behavior="com.shane.me.shanedemo.widget.LockableBottomSheetBehavior">
+        <include layout="@layout/panel_bottom_sheet"
+            android:clickable="true"
+            />
+    </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

@@ -1,4 +1,4 @@
-package com.jacksen.supportlibrarydemo;
+package com.shane.me.shanedemo.widget;
 
 import android.content.Context;
 import android.support.design.widget.BottomSheetBehavior;
@@ -12,7 +12,7 @@ import android.view.View;
  */
 
 public class LockableBottomSheetBehavior<V extends View> extends BottomSheetBehavior<V> {
-    private boolean isLocked = true;
+    private boolean isLocked;
 
     public LockableBottomSheetBehavior() {
         super();

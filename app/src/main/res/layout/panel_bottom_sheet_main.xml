@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bg_cyan"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
-</LinearLayout>
+
+    <View android:id="@+id/scale_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_purple"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/scale_view"
+        />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="20%"
+        android:background="@color/color_308ee3"
+        />
+</android.support.percent.PercentRelativeLayout>

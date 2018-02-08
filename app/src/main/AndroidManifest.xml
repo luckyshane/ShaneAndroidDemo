@@ -58,6 +58,7 @@
         <activity android:name=".activity.BottomSheetActivity" />
         <activity android:name=".activity.BottomNavigationViewActivity" />
         <activity android:name=".activity.ConstraintLayoutActivity" />
+        <activity android:name=".activity.BottomSheetActivity2" />
     </application>
 
 </manifest>
