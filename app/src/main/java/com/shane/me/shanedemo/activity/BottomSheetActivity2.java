@@ -1,5 +1,6 @@
 package com.shane.me.shanedemo.activity;
 
+import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.os.Bundle;
@@ -34,6 +35,12 @@ public class BottomSheetActivity2 extends BaseActivity {
     View view3;
     @BindView(R.id.scale_view)
     View scaleView;
+    @BindView(R.id.scale_bg)
+    View scaleBg;
+    @BindView(R.id.top_panel)
+    View topPanel;
+    @BindView(R.id.scale_status_tv)
+    View scaleStatusTv;
 
     boolean isExpand;
     LockableBottomSheetBehavior bottomSheetBehavior;
@@ -62,7 +69,7 @@ public class BottomSheetActivity2 extends BaseActivity {
         defaultWidth = ContextUtil.dip2px(this, 100);
         defaultHeight = ContextUtil.dip2px(this, 100);
         translateDeltaY = ContextUtil.dip2px(this, 150);
-        scaleToTop = ContextUtil.dip2px(this, 100);
+        scaleToTop = ContextUtil.dip2px(this, 92);
 
         bottomSheetBehavior = (LockableBottomSheetBehavior) BottomSheetBehavior.from(bottomSheetView);
         bottomSheetBehavior.setLocked(true);
@@ -81,14 +88,12 @@ public class BottomSheetActivity2 extends BaseActivity {
 
             }
         });
-        int top = scaleView.getTop();
-        Log.d(TAG, "1 scaleView top: " + top);
 
         scaleView.post(new Runnable() {
             @Override
             public void run() {
-                scaleViewDefaultTop = scaleView.getTop();
-                Log.d(TAG, "scaleView top: " + scaleViewDefaultTop);
+                scaleViewDefaultTop = scaleView.getTop() + scaleView.getHeight() / 2;
+                Log.e(TAG, "scaleView top: " + scaleViewDefaultTop);
                 initObjectAnimator();
             }
         });
@@ -98,7 +103,7 @@ public class BottomSheetActivity2 extends BaseActivity {
             public void onClick(View v) {
                 if (bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
                     CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) bottomSheetView.getLayoutParams();
-                    layoutParams.topMargin = ContextUtil.dip2px(BottomSheetActivity2.this, 300);
+                    layoutParams.topMargin = ContextUtil.dip2px(BottomSheetActivity2.this, 180);
                     bottomSheetView.setLayoutParams(layoutParams);
                     view1.setVisibility(View.VISIBLE);
                     view2.setVisibility(View.VISIBLE);
@@ -127,7 +132,36 @@ public class BottomSheetActivity2 extends BaseActivity {
 
         objectAnimator = ObjectAnimator.ofPropertyValuesHolder(scaleView, scaleWith, scaleHeight, translateY);
         objectAnimator.setDuration(500);
+        objectAnimator.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
 
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                if (scaleBg.getVisibility() == View.VISIBLE) {
+                    scaleBg.setVisibility(View.INVISIBLE);
+                    topPanel.setVisibility(View.VISIBLE);
+                    scaleStatusTv.setVisibility(View.VISIBLE);
+                } else {
+                    scaleBg.setVisibility(View.VISIBLE);
+                    topPanel.setVisibility(View.INVISIBLE);
+                    scaleStatusTv.setVisibility(View.INVISIBLE);
+                }
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+
+            }
+        });
     }
 
 
