@@ -70,6 +70,13 @@
         </intent>
     </item>-->
     <item>
+        <title>DraggableViewDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.DraggableViewDemoActivity</component_name>
+        </intent>
+    </item>
+
+    <item>
         <title>ConstraintLayoutDemo</title>
         <intent>
             <component_name>com.shane.me.shanedemo.activity.ConstraintLayoutActivity</component_name>

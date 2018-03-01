@@ -59,6 +59,7 @@
         <activity android:name=".activity.BottomNavigationViewActivity" />
         <activity android:name=".activity.ConstraintLayoutActivity" />
         <activity android:name=".activity.BottomSheetActivity2" />
+        <activity android:name=".activity.DraggableViewDemoActivity" />
     </application>
 
 </manifest>
