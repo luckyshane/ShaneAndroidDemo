@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shane.me.shanedemo">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -33,14 +35,13 @@
             android:exported="true" />
         <service android:name=".service.NetDiagnosisService" />
 
-        <activity
-            android:name=".activity.AnimDemoActivity" />
+        <activity android:name=".activity.AnimDemoActivity" />
         <activity android:name=".activity.RippleDemoActivity" />
         <activity android:name=".activity.PanelShowDemoActivity" />
         <activity android:name=".activity.DiagnosisDemoActivity" />
-        <activity android:name=".activity.ToastDemoActivity"
-            android:theme="@style/Theme.AppCompat.TranslucentActionBar"
-            >
+        <activity
+            android:name=".activity.ToastDemoActivity"
+            android:theme="@style/Theme.AppCompat.TranslucentActionBar">
 
         </activity>
         <activity android:name=".activity.VideoDialogDemoActivity" />
@@ -60,6 +61,7 @@
         <activity android:name=".activity.ConstraintLayoutActivity" />
         <activity android:name=".activity.BottomSheetActivity2" />
         <activity android:name=".activity.DraggableViewDemoActivity" />
+        <activity android:name=".activity.WebViewDemoActivity" />
     </application>
 
 </manifest>
