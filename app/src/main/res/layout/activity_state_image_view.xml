@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <FrameLayout android:id="@+id/test_layout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:clickable="true">
+        <Button android:id="@+id/test_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_red"
+            android:text="1"
+            android:gravity="center"
+            android:clickable="false" />
+        <ImageView android:id="@+id/test_iv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_yellow"/>
+    </FrameLayout>
+
+    <com.shane.me.shanedemo.widget.StateImageView
+        android:id="@+id/test_iv3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:foregroundImageId="@drawable/icon_step_1"
+        app:backgroundImageId="@drawable/icon_step_success"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

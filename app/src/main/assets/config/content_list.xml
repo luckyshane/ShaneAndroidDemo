@@ -58,17 +58,23 @@
         </intent>
     </item>
     <item>
+        <title>RippleDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.RippleDemoActivity</component_name>
+        </intent>
+    </item>-->
+    <item>
         <title>TweenAnimDemo</title>
         <intent>
             <component_name>com.shane.me.shanedemo.activity.AnimDemoActivity</component_name>
         </intent>
     </item>
     <item>
-        <title>RippleDemo</title>
+        <title>StateImageViewDemo</title>
         <intent>
-            <component_name>com.shane.me.shanedemo.activity.RippleDemoActivity</component_name>
+            <component_name>com.shane.me.shanedemo.activity.StateImageViewActivity</component_name>
         </intent>
-    </item>-->
+    </item>
     <item>
         <title>WebViewDemo</title>
         <intent>

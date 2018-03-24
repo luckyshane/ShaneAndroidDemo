@@ -1,13 +1,16 @@
 package com.shane.me.shanedemo.activity;
 
+import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 
 import com.shane.me.shanedemo.R;
+import com.shane.me.shanedemo.util.ContextUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,6 +27,41 @@ public class AnimDemoActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anim_demo);
         ButterKnife.bind(this);
+    }
+
+
+    @OnClick(R.id.btn_show)
+    void onShow() {
+        ObjectAnimator alphaAnimator = ObjectAnimator.ofFloat(targetBtn, "alpha", 0, 1.0f);
+        ObjectAnimator transAnimator = ObjectAnimator.ofFloat(targetBtn, "translationY", ContextUtil.dip2px(this, 20), 0);
+
+        AnimatorSet set = new AnimatorSet();
+
+        set.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                targetBtn.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+
+            }
+        });
+
+        set.playTogether(alphaAnimator, transAnimator);
+        set.setDuration(500);
+        set.start();
     }
 
     @OnClick(R.id.btn_translate)
@@ -89,10 +127,6 @@ public class AnimDemoActivity extends BaseActivity {
 
         allSet.start();
     }
-
-
-
-
 
 
 
