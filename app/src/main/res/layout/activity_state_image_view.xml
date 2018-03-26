@@ -28,8 +28,8 @@
         android:id="@+id/test_iv3"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        app:foregroundImageId="@drawable/icon_step_1"
-        app:backgroundImageId="@drawable/icon_step_success"
+        app:layer1="@drawable/icon_step_1"
+        app:layer0="@drawable/icon_step_success"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         />

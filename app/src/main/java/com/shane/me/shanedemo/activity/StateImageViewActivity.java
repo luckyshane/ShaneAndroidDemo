@@ -58,7 +58,11 @@ public class StateImageViewActivity extends BaseActivity {
         iv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iv3.toggle();
+                if (iv3.getShowLayerIndex() == 0) {
+                    iv3.showLayer(1, 500);
+                } else {
+                    iv3.showLayer(0, 500);
+                }
             }
         });
 
