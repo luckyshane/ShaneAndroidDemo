@@ -92,8 +92,6 @@
         <item name="android:background">#F2F2F2</item>
     </style>
     <declare-styleable name="StateImageView">
-        <attr name="backgroundImageId" format="reference"/>
-        <attr name="foregroundImageId" format="reference"/>
         <attr name="layer0" format="reference"/>
         <attr name="layer1" format="reference" />
         <attr name="layer2" format="reference" />

@@ -4,7 +4,9 @@ package com.shane.me.shanedemo.util;
  * @date: 2017/05/22
  */
 
+import android.app.Activity;
 import android.content.Context;
+import android.view.Display;
 
 public class ContextUtil {
 
@@ -24,6 +26,11 @@ public class ContextUtil {
     public static int sp2px(Context context, float spValue) {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spValue * fontScale + 0.5f);
+    }
+
+    public static int getScreenWidth(Activity context) {
+        Display display = context.getWindowManager().getDefaultDisplay();
+        return display.getWidth();
     }
 
 
