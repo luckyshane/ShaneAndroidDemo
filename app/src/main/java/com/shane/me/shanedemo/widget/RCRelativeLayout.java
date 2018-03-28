@@ -5,14 +5,11 @@ package com.shane.me.shanedemo.widget;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
 
 public class RCRelativeLayout extends RelativeLayout {
-    private static final String TAG = RCRelativeLayout.class.getSimpleName();
-
     RCHelper mRCHelper;
 
     public RCRelativeLayout(Context context) {
@@ -32,7 +29,6 @@ public class RCRelativeLayout extends RelativeLayout {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        Log.d(TAG, "onSizeChanged w: " + w + ", h: " + h + ", oldW: " + oldw + ", oldH: " + oldh);
         mRCHelper.onSizeChanged(this, w, h);
     }
 
