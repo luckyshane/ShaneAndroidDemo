@@ -17,8 +17,8 @@ import com.shane.me.shanedemo.widget.RCRelativeLayout;
 public class CornerLayoutActivity extends BaseActivity {
 
     RCRelativeLayout rcLayout;
-    int collpaseMarginLeft;
-    ObjectAnimator collpaseAnimator;
+    int collapseMarginLeft;
+    ObjectAnimator collapseAnimator;
 
 
     @Override
@@ -39,7 +39,7 @@ public class CornerLayoutActivity extends BaseActivity {
             }
         });
         int peekWidth = ContextUtil.dip2px(this, 50);
-        collpaseMarginLeft = ContextUtil.getScreenWidth(this) - peekWidth;
+        collapseMarginLeft = ContextUtil.getScreenWidth(this) - peekWidth;
         collapseRcLayout(0);
     }
 
@@ -60,16 +60,16 @@ public class CornerLayoutActivity extends BaseActivity {
     }
 
     private ObjectAnimator getCollapseAnimator() {
-        if (collpaseAnimator == null) {
-            PropertyValuesHolder transHolder = PropertyValuesHolder.ofFloat("translationX", 0, collpaseMarginLeft);
-            PropertyValuesHolder leftRaduisHolder = PropertyValuesHolder.ofFloat("leftRadius", 0, ContextUtil.dip2px(this, 18));
-            collpaseAnimator = ObjectAnimator.ofPropertyValuesHolder(rcLayout, transHolder, leftRaduisHolder);
+        if (collapseAnimator == null) {
+            PropertyValuesHolder transHolder = PropertyValuesHolder.ofFloat("translationX", 0, collapseMarginLeft);
+            PropertyValuesHolder leftRadiusHolder = PropertyValuesHolder.ofFloat("leftRadius", 0, ContextUtil.dip2px(this, 18));
+            collapseAnimator = ObjectAnimator.ofPropertyValuesHolder(rcLayout, transHolder, leftRadiusHolder);
         }
-        return collpaseAnimator;
+        return collapseAnimator;
     }
 
     private boolean isCollapse() {
-        return rcLayout.getTranslationX() == collpaseMarginLeft;
+        return rcLayout.getTranslationX() == collapseMarginLeft;
     }
 
     private boolean isExpanded() {

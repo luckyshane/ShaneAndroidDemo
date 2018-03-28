@@ -4,6 +4,7 @@ package com.shane.me.shanedemo.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.support.annotation.Keep;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
@@ -62,6 +63,7 @@ public class RCRelativeLayout extends RelativeLayout {
     }
 
 
+    @Keep
     public void setLeftRadius(float radius) {
         mRCHelper.setTopLeftRadius(radius);
         mRCHelper.setBottomLeftRadius(radius);
