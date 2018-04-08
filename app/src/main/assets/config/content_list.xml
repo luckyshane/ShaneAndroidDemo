@@ -64,6 +64,12 @@
         </intent>
     </item>-->
     <item>
+        <title>ViewDragHelperDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.ViewDragHelperActivity</component_name>
+        </intent>
+    </item>
+    <item>
         <title>CornerLayout</title>
         <intent>
             <component_name>com.shane.me.shanedemo.activity.CornerLayoutActivity</component_name>

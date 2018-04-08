@@ -4,6 +4,7 @@ package com.shane.me.shanedemo.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.os.Build;
 import android.support.annotation.Keep;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -25,6 +26,10 @@ public class RCRelativeLayout extends RelativeLayout {
         super(context, attrs, defStyleAttr);
         mRCHelper = new RCHelper();
         mRCHelper.initAttrs(context, attrs);
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR2) {
+            setLayerType(LAYER_TYPE_SOFTWARE, null);
+        }
     }
 
     @Override
