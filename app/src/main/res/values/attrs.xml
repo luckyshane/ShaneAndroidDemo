@@ -50,5 +50,11 @@
         <attr name="clip_background" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="DotImageView">
+        <attr name="dot_color" format="color"/>
+        <attr name="dot_radius" format="dimension"/>
+        <attr name="is_show_dot" format="boolean"/>
+    </declare-styleable>
+
 
 </resources>

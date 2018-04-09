@@ -70,6 +70,7 @@
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.shane.me.shanedemo.activity.AnimDemoActivity"/>
         </activity>
+        <activity android:name=".activity.DotImageViewActivity" />
 
         <receiver android:name=".receiver.AlarmReceiver">
             <intent-filter>

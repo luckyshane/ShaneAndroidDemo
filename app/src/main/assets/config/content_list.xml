@@ -64,6 +64,12 @@
         </intent>
     </item>-->
     <item>
+        <title>DotImageViewDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.DotImageViewActivity</component_name>
+        </intent>
+    </item>
+    <item>
         <title>AlarmDemo</title>
         <intent>
             <component_name>com.shane.me.shanedemo.activity.AlarmDemoActivity</component_name>
