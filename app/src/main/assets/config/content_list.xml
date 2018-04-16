@@ -63,6 +63,13 @@
             <component_name>com.shane.me.shanedemo.activity.RippleDemoActivity</component_name>
         </intent>
     </item>-->
+
+    <item>
+        <title>CheckInDemo</title>
+        <intent>
+            <component_name>com.shane.me.shanedemo.activity.CheckInDemoActivity</component_name>
+        </intent>
+    </item>
     <item>
         <title>DotImageViewDemo</title>
         <intent>

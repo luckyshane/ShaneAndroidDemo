@@ -71,6 +71,7 @@
                 android:value="com.shane.me.shanedemo.activity.AnimDemoActivity"/>
         </activity>
         <activity android:name=".activity.DotImageViewActivity" />
+        <activity android:name=".activity.CheckInDemoActivity" />
 
         <receiver android:name=".receiver.AlarmReceiver">
             <intent-filter>
