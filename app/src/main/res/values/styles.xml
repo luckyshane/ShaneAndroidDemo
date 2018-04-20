@@ -97,5 +97,14 @@
         <attr name="layer2" format="reference" />
     </declare-styleable>
 
+    <style name="TopBarIconStyle">
+        <item name="android:layout_width">@dimen/top_bar_icon_size</item>
+        <item name="android:layout_height">@dimen/top_bar_icon_size</item>
+        <item name="android:padding">@dimen/top_bar_icon_padding</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@drawable/bg_status_bar_icon</item>
+    </style>
+
+
 
 </resources>

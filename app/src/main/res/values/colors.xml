@@ -15,5 +15,7 @@
     <color name="bg_cyan">#55CEE0</color>
     <color name="account_mask">#12787878</color>
     <color name="text_normal">#465C66</color>
+    <color name="status_bar_menu_bg_light_press_color">#19000000</color>
+
 
 </resources>

@@ -72,6 +72,7 @@
         </activity>
         <activity android:name=".activity.DotImageViewActivity" />
         <activity android:name=".activity.CheckInDemoActivity" />
+        <activity android:name=".activity.ImagePressDemoActivity" />
 
         <receiver android:name=".receiver.AlarmReceiver">
             <intent-filter>
